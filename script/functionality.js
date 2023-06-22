@@ -109,7 +109,7 @@ $(document).ready(function(){
                 container.append(`
                 <!-- card -->
                     <li class="card">
-                        <img src="../assets/awards/${value.src}.jpg" alt="" class="object-cover shrink-0">
+                        <img src="./assets/awards/${value.src}.jpg" alt="" class="object-cover shrink-0">
 
                         <!-- text -->
                         <div class="mt-4">
@@ -124,7 +124,7 @@ $(document).ready(function(){
                 container.append(`
                 <!-- card -->
                 <li class="pd-card card ${value.filter}">
-                    <img src="../assets/projects_and_designs/${value.src}" alt="" class=" object-contain shrink-0">
+                    <img src="./assets/projects_and_designs/${value.src}" alt="" class=" object-contain shrink-0">
                     <!-- text -->
                     <div class="mt-5">
                         <h4 class="text-[15px] lg:text-base text-white capitalize">${value.title}</h4>
@@ -140,7 +140,7 @@ $(document).ready(function(){
                 container.append(`
                 <!-- card -->
                     <li class="card relative">
-                        <img src="../assets/certificates/${value}" alt="" class="object-cover shrink-0">
+                        <img src="./assets/certificates/${value}" alt="" class="object-cover shrink-0">
                     </li>
                 `)
 
