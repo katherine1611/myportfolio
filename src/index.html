@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katherine Decena | Portfolio</title>
+    <!-- css styling -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- script -->
+    <script src="../script/app.js" defer></script>
+</head>
+<body class="w-screen bg-secondary flex flex-col items-center justify-center">
+
+    <div class="hidden w-full min-h-screen fixed top-0 left-0 bg-[rgba(0,0,0,.7)] cursor-pointer duration-500 z-30" id="nav-sm-overlay">
+    </div>
+
+    <!-- nav sm -->
+    <nav class="w-64 h-screen fixed top-0 left-0 px-6 pt-4 bg-white duration-500 open z-30" id="nav-sm">
+       <!-- logo -->
+       <a href="#">
+           <img src="../assets/logo/brand/dark.png" alt="" class="pointer-events-none">
+       </a>
+       <!-- menus -->
+       <ul class="flex flex-col gap-y-5 capitalize text-[14px] mt-12" id="nav-sm-menus">
+           <!-- home -->
+           <li class="menu-list-sm menu-list-sm-active" id="home-menu-sm">
+               <a href="#home">
+                   home
+               </a>
+           </li>
+           <!-- about -->
+           <li class="menu-list-sm" id="about-menu-sm">
+               <a href="#about">
+                   about
+               </a>
+           </li>
+           <!-- services -->
+           <li class="menu-list-sm" id="services-menu-sm">
+                <a href="#services">
+                    services
+                </a>
+            </li>
+           <!-- projects -->
+           <li class="menu-list-sm" id="pd-menu-sm">
+               <a href="#projects_designs">
+                   projects
+               </a>
+           </li>
+           
+           <!-- certificates -->
+           <li class="menu-list-sm" id="ac-menu-sm">
+               <a href="#awards_certificates">
+                   certificates
+               </a>
+           </li>
+       </ul>
+           
+       </ul>
+    </nav>
+
+    <!-- nav -->
+    <nav class="fixed bg-secondary top-0 left-0 w-full h-16 max-h-16 flex items-center justify-between c-margin z-20 duration-500" id="nav-lg">
+        
+        <div class="flex items-center gap-x-6 xl:gap-x-10">
+            <!-- logo -->
+            <a href="#home" class="w-fit h-[56px]">
+                <img class="h-full object-cover" src="../assets/logo/brand/logo-dark.png" alt="Logo">
+            </a>
+
+            <!-- menus -->
+            <ul class="hidden lg:flex items-center gap-x-8 capitalize text-[14px]" id="nav-lg-menus">
+                <!-- home -->
+                <li class="menu-list menu-list-active" id="home-menu-lg">
+                    <a href="#home">
+                        home
+                    </a>
+                </li>
+                <!-- about -->
+                <li class="menu-list" id="about-menu-lg">
+                    <a href="#about">
+                        about
+                    </a>
+                </li>
+                <!-- services -->
+                <li class="menu-list" id="services-menu-lg">
+                    <a href="#services">
+                        services
+                    </a>
+                </li>
+                <!-- projects -->
+                <li class="menu-list" id="pd-menu-lg">
+                    <a href="#projects_designs">
+                        projects
+                    </a>
+                </li>
+                <!-- certificates -->
+                <li class="menu-list" id="ac-menu-lg">
+                    <a href="#awards_certificates">
+                        certificates
+                    </a>
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <div class="hidden lg:flex w-2/6 h-full bg-primary text-right absolute right-0 pr-[40px] xl:pr-[120px] items-center justify-end">
+            <!-- email -->
+            <span class="h-16 flex items-center gap-x-4 text-secondary">
+                <i class="fa-solid fa-envelope text-lg"></i>
+                <span class="text-sm">decenak476@gmail.com</span>
+            </span>
+
+
+        </div>
+
+        <!-- hamburger menu -->
+        <button class="w-8 h-8 block lg:hidden" id="toggle-nav-sm">
+            <i class="fa-solid fa-bars text-white text-[1.4rem] pointer-events-none"></i>
+        </button>
+    </nav>
+
+    <!-- main -->
+    <main id="main" class="w-full h-fit relative overflow-hidden">
+        <!-- overlay - green -->
+        <div class="hidden lg:block h-full w-2/6 bg-primary absolute top-0 right-0 z-10 before:absolute before:content-landing-image before:w-[300px] before:h-[400px] before:rounded-full before:-left-72 before:top-0">
+            <!-- object -->
+            <div class="w-full flex items-center justify-end pr-[120px]">
+                <div class="w-16 h-16 mt-24">
+                    <img class="w-full h-full object-contain" src="../assets/objects/_/_.pdf" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- introductory -->
+        <div class="pt-48 pb-48 lg:pl-28 xl:pl-48 text-white flex flex-col items-center justify-center lg:items-start">
+            <div class="px-8 md:px-0 lg:w-8/12 flex flex-col items-center lg:items-start">
+                <img src="../assets/objects/syntax-sm.png" alt="code-img" class="pb-5 lg:hidden">
+                <h5 class="uppercase text-lg font-medium tracking-wide">hello! i am a,</h5>
+                <h1 class="text-3xl lg:text-4xl xl:text-5xl text-center xl:text-justify uppercase font-bold mt-4 xl:mt-1 tracking-wide relative">web <span class="text-primary">developer</span></h1>
+                <!-- about -->
+                <p class="md:w-3/5 text-[15px] xl:text-base text-center lg:text-justify font-light mt-4 tracking-wider leading-8">
+                    Innovative, solution - driven, collaborative professional with various project that involves in web design and development. 
+                    <!-- aspiring web developer, from content structure,  styling web pages, functionality creation, responsive layouts, and backend integration to project development -->
+                </p>
+                <!-- get started button -->
+                <a href="#about" class="px-4 py-3 bg-gray text-[15px] xxl:text-base mt-11 capitalize relative cursor-pointer">
+                    Get started
+                </a>
+            </div>
+        </div>
+        <!-- <svg class="bg- absolute -bottom-32 xl:-bottom-16 z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#343A40" fill-opacity="1" d="M0,224L80,208C160,192,320,160,480,176C640,192,800,256,960,245.3C1120,235,1280,149,1360,106.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+    </main>
+
+    <!-- about -->
+    <section id="about" class=" w-full c-margin section-py relative bg-gray">
+        <div class="container mx-auto xl:flex gap-x-12 relative">
+
+            <!-- objects -->
+            <div class="w-20 h-20 objects absolute -top-10 right-0">
+                <img class="w-full h-full object-contain" src="../assets/objects/eclipse.png" alt="">
+            </div>
+            <div class="w-12 h-12 objects absolute -top-20 left-0">
+                <img class="w-full h-full object-contain" src="../assets/objects/W8-light-sm.svg" alt="">
+            </div>
+
+            <!-- my image -->
+            <div class="w-full h-full lg:w-[500px] lg:h-[450px] relative">
+                <img src="../assets/objects/about-img.png" alt="owner's image" class="lg:absolute -top-36 left-0">
+            </div>
+    
+            <!-- text -->
+            <section class="flex flex-col flex-1 mt-10 xl:mt-0">
+    
+                <!-- about -->
+                <h1 class="text-[2.7rem] uppercase font-bold text-primary">about me</h1>
+                <p class="text-white-opac-30 mt-3 text-justify">
+                    My name is Katherine Lucero Decena 23, from Pangasinan. Graduate of BSIT Major in Advance Programming, growing in tech these skills helps me to broaden the scope of my capabilities : problem-solver, detailed, innovative and creative-focused with Web Development skill I would like to engage myself into something challenging to further equip my technical skill and to put my ideas into real world solutions.
+                </p>
+                
+                <!-- work experience -->
+                <span class="mt-7">
+                    <span class="sub-title-sm">my work experience</span>
+                    <p class="text-white-opac-30 mt-2 text-justify">
+                        In my previous experience at CityState Savings Bank, I successfully developed a web-based application for managing bank employee relative, yet I was involved in the overall design and development process for the application, and I managed enhancement requests after each rollout.
+                        I have worked as a Web Designer with a team, I concentrate with client side functionality for both Admin and Superadmin side, dashboard module and login.
+                    </p>
+                </span>
+    
+                <!-- socials -->
+                <span class="mt-7">
+                    <span class="sub-title-sm">let's talk</span>
+                    <!-- social -->
+                    <span class="flex flex-wrap gap-y-3 items-center text-white gap-x-4 mt-3">
+                        <li class="flex items-center gap-x-2 fb-bg text-white p-3">
+                            <a href="https://www.facebook.com/bubblegum.tabs08/">
+                                <i class="fa-brands fa-facebook text-xl"></i>
+                                <span class="text-sm">Katherine Decena (Bubblegum) </span>
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-x-2 ig-bg text-white p-3">
+                            <a href="https://www.instagram.com/JustKatelynrocks">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                                <span class="text-sm">@JustKatelynrocks</span>
+                            </a>
+                        </li>
+                    </span>
+                </span>
+                 
+                <hr class="hr-bg w-full h-12 bg-black mt-12 pb-4"></hr>
+    
+                <!-- organization joined -->
+                <span class="mt-12">
+                    <span class="sub-title-sm">organization joined</span>
+                    <div class="w-full h-full lg:w-72 lg:h-40 mt-4">
+                        <img src="https://pbs.twimg.com/profile_images/1358322780383506432/3CvpOZBF_400x400.jpg" alt="" class="w-full h-full object-cover shrink">
+                    </div>
+                    <p class="text-white-opac-30 mt-5 text-justify">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </span>
+    
+            </section>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="w-full">
+        <!-- heading -->
+        <div class="heading-container">
+            <h1 class="heading-title">services</h1>
+        </div>
+
+        <div class="c-margin section-py">
+            <ul class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-8 items-center justify-between relative">
+
+                <!-- web dev -->
+                <!-- <div class="flex flex-col flex-1 items-center xl:items-start lg:pl-16 pb-36 xl:pb-0 border-b border-b-primary xl:border-none"> -->
+                <li class="relative h-full">
+                    <div class="h-full flex flex-col flex-1 items-center xl:items-start bg-gray border border-primary py-10 service-container">
+
+                        <div class="body flex flex-col items-center xl:items-start">
+                            <img class="w-20 h-20 object-contain" src="../assets/objects/code.png" alt="">
+                            <h1 class="uppercase text-center font-black text-white tracking-wide mt-7 service-heading">WEB DEV</h1>
+                            <p class="leading-6 text-[15px] text-center xl:text-justify mt-7 text-white-opac-30">
+                                Content structure,  styling web pages, javascript functionality, responsive layouts, and backend integration to project development.
+                            </p>
+                        </div>
+    
+                        <!-- tools -->
+                        <span class="sub-title-sm mt-10">tools</span>
+                        <ul class="w-fit flex flex-wrap justify-center xl:justify-start gap-2 mt-3">
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/html.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/css-3.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/bootstrap.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/tailwind.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/js.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/jquery.svg" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/laravel.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/postman.svg" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/vscode.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/github.png" alt="">
+                            </li>
+                        </ul>
+    
+                    </div>
+                </li>
+
+                <!-- ui ux -->
+                <li class="relative h-full">
+                    <div class="h-full flex flex-col flex-1 items-center xl:items-start bg-gray border border-primary py-10 service-container">
+                        
+                        <div class="body flex flex-col items-center xl:items-start">
+                            <img class="w-20 h-20 object-contain" src="../assets/objects/graphic.png" alt="">
+                            <h1 class="uppercase text-center font-black lg:whitespace-nowrap text-white tracking-wide mt-7 service-heading">UI UX DESIGN</h1>
+                            <p class="leading-6 text-[15px] text-center xl:text-justify mt-7 text-white-opac-30">
+                                Wireframing, High and Low Fidelity Mockups, Prototyping, Mobile and Web Platforms, Components to User Experience.
+                            </p>
+                        </div>
+    
+                        <!-- tools -->
+                        <span class="sub-title-sm mt-10">tools</span>
+                        <ul class="w-fit flex flex-wrap justify-center xl:justify-start gap-2 mt-3">
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/figma.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/canva.png" alt="">
+                            </li>
+                            <!-- tool -->
+                            <li class="w-12 h-12 technology-tools-bg rounded flex items-center justify-center">
+                                <img class="w-8 h-8 object-cover" src="../assets/logo/photoshop.png" alt="">
+                            </li>
+                        </ul>
+    
+                        <!-- tools -->
+                        <span class="sub-title-sm mt-14">portfolio</span>
+                        <!-- tool -->
+                        <a href="https://www.behance.net/katherinedecena" class="w-fit h-12 technology-tools-bg rounded flex flex-wrap items-center pl-2 pr-3 mt-3">
+                            <span class="text-sm text-white whitespace-nowrap">Katherine Decena</span>
+                        </a>
+    
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- projects and designs -->
+    <section id="projects_designs" class="w-full">
+        <!-- heading -->
+        <div class="heading-container">
+            <h1 class="heading-title">projects and designs</h1>
+        </div>
+
+        <div class="c-margin section-py">
+            <!-- filters -->
+            <ul class="flex flex-wrap gap-y-4 items-center justify-center gap-x-3" id="pd-filters">
+                <li>
+                    <button data-filter="all" class="text-[14px] btn-full-pd btn-full-pd-active list">all</button>
+                </li>
+                <li>
+                    <button data-filter="project" class="text-[14px] btn-full-pd list">projects</button>
+                </li>
+                <li>
+                    <button data-filter="design" class="text-[14px] btn-full-pd list">designs</button>
+                </li>
+            </ul>
+            <!-- cards -->
+            <ul class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-16" id="pd-container">
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- awards and certificates -->
+    <section id="awards_certificates" class="w-full">
+        <!-- heading -->
+        <div class="heading-container">
+            <h1 class="heading-title">awards and certificates</h1>
+        </div>
+
+        <div class="c-margin py-20">
+            <!-- cards -->
+            <div class="mt-16">
+                <!-- <div class="text-center lg:text-left text-white uppercase w-full">awards</div> -->
+
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4 lg:mt-0" id="awards-container">
+                </ul>
+            </div>
+
+            <!-- certificates -->
+            <div class="mt-16">
+                <!-- <span class="text-white uppercase">certificates</span> -->
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4 lg:mt-0" id="certifications-container">
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="w-full py-20 flex flex-col items-center justify-center">
+        <hr class="w-32 h-[6px] bg-white-opac-30 rounded-full">
+        <span class="italic text-white mt-6 font-extralight text-center"> " I can do all things through Christ, which strengthens me. " </span>
+
+        <ul class="mt-5 flex items-center gap-x-3">
+            <!-- facebook -->
+            <li>
+                <a href="#" class="hover:opacity-10 duration-500">
+                    <img src="../assets/icons/Social Media/fb.png" class="w-8 h-8 object-cover pointer-events-none" alt="facebook">
+                </a>
+            </li>
+            <!-- instagram -->
+            <li>
+                <a href="#" class="hover:opacity-10 duration-500">
+                    <img src="../assets/icons/Social Media/ig.png" class="w-9 h-9 object-cover pointer-events-none" alt="facebook">
+                </a>
+            </li>
+            <!-- behance -->
+            <li>
+                <a href="#" class="hover:opacity-10 duration-500">
+                    <img src="../assets/icons/Social Media/behance.png" class="w-8 h-8 object-cover pointer-events-none" alt="facebook">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+    <!-- smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- certificates src -->
+    <script src="../script/labels.js"></script>
+    <!-- functionality -->
+    <script src="../script/functionality.js"></script>
+</html>

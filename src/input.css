@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-snap-type: mandatory;
+}
+h1, .sub-title-sm {
+    @apply font-secondary
+}
+.c-margin{
+    @apply px-[40px] xl:px-[120px]
+}
+.nav-menu-active{
+    @apply border-b-primary
+}
+.nav-menu-hover{
+    @apply hover:border-b hover:border-b-primary cursor-pointer duration-500
+}
+.menu-list
+{
+    @apply text-white p-2 border-b border-b-secondary nav-menu-hover
+}
+/* sm */
+.menu-list-sm
+{
+    @apply text-secondary p-2 cursor-pointer hover:bg-primary duration-500
+}
+.menu-list-active
+{
+    @apply text-white p-2 border-b border-b-secondary nav-menu-active nav-menu-hover 
+}
+/* sm */
+.menu-list-sm-active
+{
+    @apply bg-primary
+}
+.sub-title-sm 
+{
+    @apply block uppercase text-white font-semibold
+}
+
+/* nav menu sm active */
+.open{
+    @apply -ml-64
+}
+.show-overlay{
+    @apply -ml-[100%] z-30
+}
+/* services heading */
+.service-heading
+{
+    @apply text-[2.3rem] md:text-4xl lg:text-5xl leading-10
+}
+.service-container
+{
+    @apply px-8 md:px-12 lg:px-16
+}
+
+/* padding page tb */
+.section-py
+{
+    @apply py-28
+}
+/* components */
+@layer components {
+    .heading-container{
+        @apply bg-primary w-full text-center py-2
+    }
+    .heading-container .heading-title{
+        @apply uppercase font-black text-2xl md:text-3xl lg:text-4xl tracking-wide text-secondary font-secondary px-4 md:px-0
+    }
+    /* projects and designs btn */
+    .btn-full-pd{
+        @apply text-base bg-white-opac-30 text-white rounded-full px-8 py-2 capitalize hover:bg-primary hover:text-secondary cursor-pointer duration-500
+    }
+    .btn-full-pd-active{
+        @apply bg-primary text-secondary
+    }
+}
